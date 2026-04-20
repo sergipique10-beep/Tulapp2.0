@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tulapp · Proyecto Social </title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css?v=2"/>
+</head>
+<body>
+
+<!-- ===== SECCIÓN 1: HERO ===== -->
+<section class="s-hero">
+  <svg class="cross-bg" viewBox="0 0 800 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="cx" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <line x1="20" y1="13" x2="20" y2="27" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="13" y1="20" x2="27" y2="20" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-linecap="round"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#cx)"/>
+  </svg>
+
+  <nav class="hero-nav">
+    <div class="hero-pill">
+      <div class="hero-pill-dot"></div>
+      Proyecto Social Santander
+    </div>
+  </nav>
+
+  <div class="hero-body">
+    <div class="hero-left">
+      <h1 class="hero-title">Tulapp</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-headline">Conectando generaciones en la Catalunya rural</p>
+      <p class="hero-desc">Una solución tecnológica que une personas mayores con voluntarios jóvenes, fortaleciendo el tejido social de nuestros pueblos.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">2.3M</div>
+          <div class="hero-stat-label">mayores de 65 años en zonas rurales</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">47%</div>
+          <div class="hero-stat-label">sufren soledad crónica</div>
+        </div>
+      </div>
+      <a href="#solucion" class="btn-blanco">Conocer más →</a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-frame">
+        <img src="images/pexels-kampus-7551686.jpg" alt="Paisaje rural de Catalunya"/>
+      </div>
+      <div class="hero-float-badge">
+        <div class="badge-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 19.5C11 19.5 2.5 14.5 2.5 8.5a5 5 0 0 1 8.5-3.54A5 5 0 0 1 19.5 8.5c0 6-8.5 11-8.5 11z" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <div class="badge-num">500+</div>
+          <div class="badge-text">Vidas impactadas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 2: EL PROBLEMA ===== -->
+<section class="s-problema">
+  <h2 class="s-titulo">La realidad del envejecimiento<br/>en zonas rurales</h2>
+  <p class="s-subtitulo">La despoblación rural en Catalunya ha creado una crisis silenciosa que afecta a miles de personas mayores que viven aisladas.</p>
+
+  <div class="problema-grid">
+    <div class="problema-card">
+      <div class="prob-icon rojo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CC0000" stroke-width="1.8" stroke-linecap="round">
+          <path d="M12 21C12 21 3 13.5 3 8a9 9 0 0 1 18 0c0 5.5-9 13-9 13z"/>
+          <circle cx="12" cy="8" r="2.5"/>
+        </svg>
+      </div>
+      <div class="prob-num r">847 <span>pueblos</span></div>
+      <div class="prob-title">Aislamiento geográfico</div>
+      <p class="prob-desc">con menos de 500 habitantes en Catalunya, alejados de servicios básicos</p>
+    </div>
+    <div class="problema-card">
+      <div class="prob-icon beige">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="1.8" stroke-linecap="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+      <div class="prob-num b">47%</div>
+      <div class="prob-title">Soledad crónica</div>
+      <p class="prob-desc">de personas mayores en áreas rurales experimentan soledad severa diariamente</p>
+    </div>
+    <div class="problema-card">
+      <div class="prob-icon verde">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A7A50" stroke-width="1.8" stroke-linecap="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </div>
+      <div class="prob-num v">68%</div>
+      <div class="prob-title">Falta de apoyo</div>
+      <p class="prob-desc">necesitan ayuda regular con tareas cotidianas como compras o citas médicas</p>
+    </div>
+  </div>
+
+  <div class="problema-cta">
+    <h3>Un problema que requiere acción inmediata</h3>
+    <p>La tecnología puede ser la solución para acortar distancias, crear vínculos y devolver la dignidad a quienes construyeron la Catalunya de hoy.</p>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 3: SOLUCIÓN ===== -->
+<section class="s-solucion" id="solucion">
+  <div class="sol-inner">
+    <div class="sol-left">
+      <div class="sol-img">
+        <img src="images/pexels-kampus-7983563.jpg" alt="Voluntario ayudando a persona mayor"/>
+      </div>
+    </div>
+    <div class="sol-right">
+      <div class="sol-tag">Nuestra solución</div>
+      <h2 class="sol-titulo">Conectando generaciones,<br/><em>creando comunidad</em></h2>
+      <p class="sol-desc"><strong>Tulapp</strong> es una aplicación móvil intuitiva que permite a personas mayores solicitar ayuda con un simple botón, conectándolas instantáneamente con voluntarios jóvenes de su comunidad dispuestos a tender una mano.</p>
+      <div class="sol-checks">
+        <div class="sol-check">
+          <div class="check-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          Interfaz simple y accesible para personas mayores
+        </div>
+        <div class="sol-check">
+          <div class="check-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          Verificación de voluntarios para garantizar seguridad
+        </div>
+        <div class="sol-check">
+          <div class="check-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          Geolocalización para conectar vecinos cercanos
+        </div>
+        <div class="sol-check">
+          <div class="check-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          Sistema de valoraciones y seguimiento de ayudas
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 4: CÓMO FUNCIONA ===== -->
+<section class="s-como">
+  <div class="como-tag">Cómo funciona</div>
+  <h2 class="como-titulo">Tres pasos para <em>crear impacto</em></h2>
+  <p class="como-desc">Un proceso simple que transforma vidas y fortalece comunidades</p>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-top">
+        <div class="step-icon rojo-suave">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#CC0000" stroke-width="1.8" stroke-linecap="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.19h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.75a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/>
+          </svg>
+        </div>
+        <div class="step-num-label">01</div>
+      </div>
+      <div class="step-title">La persona mayor solicita ayuda</div>
+      <p class="step-body">Con un botón grande y claro, pide ayuda para tareas como ir al médico, hacer compras, o simplemente charlar.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="step-card">
+      <div class="step-top">
+        <div class="step-icon gris-suave">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#7A8060" stroke-width="1.8" stroke-linecap="round">
+            <path d="M12 21C12 21 3 13.5 3 8a9 9 0 0 1 18 0c0 5.5-9 13-9 13z"/>
+            <circle cx="12" cy="8" r="2.5"/>
+          </svg>
+        </div>
+        <div class="step-num-label">02</div>
+      </div>
+      <div class="step-title">Voluntarios cercanos reciben la alerta</div>
+      <p class="step-body">Jóvenes de la zona son notificados instantáneamente y pueden aceptar la solicitud según su disponibilidad.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="step-card">
+      <div class="step-top">
+        <div class="step-icon beige-suave">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#8B7355" stroke-width="1.8" stroke-linecap="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <div class="step-num-label">03</div>
+      </div>
+      <div class="step-title">Se crea una conexión</div>
+      <p class="step-body">El voluntario ayuda, la persona mayor se siente acompañada, y la comunidad se fortalece. Simple. Humano.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 5: LA APP ===== -->
+<section class="s-app">
+  <svg class="cross-bg" viewBox="0 0 800 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;pointer-events:none;z-index:0">
+    <defs>
+      <pattern id="cx2" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <line x1="20" y1="13" x2="20" y2="27" stroke="rgba(255,255,255,0.07)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="13" y1="20" x2="27" y2="20" stroke="rgba(255,255,255,0.07)" stroke-width="2" stroke-linecap="round"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#cx2)"/>
+  </svg>
+  <div style="position:relative;z-index:1;text-align:center;margin-bottom:48px">
+    <div class="app-tag">La aplicación</div>
+    <h2 class="app-titulo">Tulapp</h2>
+    <p class="app-sub">Diseñada con amor para las personas mayores: botones grandes, lenguaje claro, y ayuda a un solo toque</p>
+  </div>
+  <div class="app-inner" style="position:relative;z-index:1">
+    <div>
+      <p class="app-headline">Una interfaz pensada para<br/><em>quien más lo necesita</em></p>
+      <div style="height:16px"></div>
+      <div class="app-features">
+        <div class="app-feature">
+          <div class="app-feat-icon">👋</div>
+          <div>
+            <div class="app-feat-title">Saludo personalizado</div>
+            <p class="app-feat-desc">La app te recibe por tu nombre, creando una experiencia cercana y familiar</p>
+          </div>
+        </div>
+        <div class="app-feature">
+          <div class="app-feat-icon rojo-bg" style="background:rgba(180,0,0,0.5)">🆘</div>
+          <div>
+            <div class="app-feat-title">Botón grande de ayuda</div>
+            <p class="app-feat-desc">Un único botón grande y visible para solicitar ayuda cuando la necesites</p>
+          </div>
+        </div>
+        <div class="app-feature">
+          <div class="app-feat-icon" style="background:rgba(255,255,255,0.12)">📋</div>
+          <div>
+            <div class="app-feat-title">Categorías claras</div>
+            <p class="app-feat-desc">Selecciona fácilmente el tipo de ayuda: compras, acompañamiento, reparaciones…</p>
+          </div>
+        </div>
+        <div class="app-feature">
+          <div class="app-feat-icon verde-bg" style="background:rgba(60,120,60,0.4)">✅</div>
+          <div>
+            <div class="app-feat-title">Proceso simplificado</div>
+            <p class="app-feat-desc">Solo tres pasos: abrir app, elegir tipo de ayuda, enviar. Así de simple.</p>
+          </div>
+        </div>
+      </div>
+      <div class="app-quote">
+        "Hemos testado Tulapp con más de 50 personas mayores. El 92% pudo enviar una solicitud de ayuda en menos de 30 segundos sin asistencia."
+      </div>
+    </div>
+    <div class="app-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="phone-notch"></div>
+          <div class="phone-app-name">TULAPP</div>
+          <div class="phone-greeting">Hola, Pol</div>
+          <div class="phone-question">¿En qué podemos ayudarte?</div>
+          <div class="phone-btn">
+            <div class="phone-btn-icon">📞</div>
+            AYUDA TELEFÓNICA
+          </div>
+          <div class="phone-btn">
+            <div class="phone-btn-icon">🤝</div>
+            PRESENCIAL
+          </div>
+          <div class="phone-nav">
+            <div class="phone-nav-item"><div class="phone-nav-icon">🏠</div></div>
+            <div class="phone-nav-item"><div class="phone-nav-icon">📹</div></div>
+            <div class="phone-nav-item"><div class="phone-nav-icon">👤</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN 6: CTA FINAL ===== -->
+<section class="s-cta">
+  <div class="cta-pill">Financiación Santander</div>
+  <h2 class="cta-titulo">Juntos podemos<br/><em>cambiar vidas</em></h2>
+  <p class="cta-desc">Santander tiene la oportunidad de liderar un proyecto con impacto social real, devolviendo a las comunidades rurales lo que han dado durante generaciones. Este es un proyecto que importa. Que perdura. Que transforma.</p>
+  <div class="cta-btns">
+    <a href="#" class="btn-rojo">Apoyar este proyecto →</a>
+    <a href="#" class="btn-outline">Descargar propuesta completa</a>
+  </div>
+  <div class="cta-trust">
+    <div class="trust-item">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.4"><path d="M7 13C7 13 1.5 9.5 1.5 5.5a5.5 5.5 0 0 1 11 0C12.5 9.5 7 13 7 13z"/></svg>
+      Impacto social verificable
+    </div>
+    <div class="trust-item">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.4"><path d="M10 13v-1.5a3 3 0 0 0-3-3H3a3 3 0 0 0-3 3V13"/><circle cx="5" cy="5" r="3"/><path d="M14 13v-1.5a3 3 0 0 0-2.25-2.9M9.5 2.1a3 3 0 0 1 0 5.8"/></svg>
+      Equipo experimentado
+    </div>
+    <div class="trust-item">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.4"><circle cx="7" cy="6" r="3"/><path d="M7 11C7 11 2 8 2 5a5 5 0 0 1 10 0c0 3-5 6-5 6z"/></svg>
+      50 pueblos comprometidos
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-brand">Tulapp</div>
+  <p class="footer-copy">© 2026 Tulapp · Proyecto Conexión Rural Catalunya · Una iniciativa con corazón</p>
+  <p class="footer-tagline">Porque ninguna persona mayor debería sentirse sola</p>
+</footer>
+
+</body>
+</html>
