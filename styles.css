@@ -32,7 +32,7 @@ body {
   background: var(--rojo);
   position: relative;
   overflow: hidden;
-  padding: 28px 60px 64px;
+  padding: 100px 60px 160px;
 }
 .cross-bg {
   position: absolute;
@@ -40,16 +40,12 @@ body {
   pointer-events: none;
   z-index: 0;
 }
-.hero-nav {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 52px;
-}
+.hero-nav { display: none; }
 .hero-pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255,255,255,0.3);
   border-radius: 999px;
   padding: 8px 18px;
@@ -65,9 +61,11 @@ body {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 h1.hero-title {
   font-family: 'Playfair Display', Georgia, serif;
@@ -81,27 +79,25 @@ h1.hero-title {
 .hero-divider { width: 48px; height: 2px; background: rgba(255,255,255,0.5); margin-bottom: 24px; }
 .hero-headline {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   color: white;
-  line-height: 1.3;
-  margin-bottom: 18px;
-  max-width: 460px;
+  line-height: 1.25;
+  margin-bottom: 22px;
 }
 .hero-desc {
-  font-size: 15px;
-  color: rgba(255,255,255,0.82);
-  line-height: 1.75;
-  max-width: 440px;
+  font-size: 18px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
   font-weight: 300;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 32px; }
 .hero-stat {
   background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.18);
+  border: 1px solid rgba(243, 235, 235, 0.945);
   border-radius: 14px;
-  padding: 20px 22px;
+  padding: 36px 20px;
 }
 .hero-stat-num {
   font-family: 'Playfair Display', serif;
@@ -127,15 +123,16 @@ h1.hero-title {
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
 }
-.btn-blanco:hover { background: #f5f5f5; }
+.btn-blanco:hover { background: #f5f5f5; transform: scale(1.06); }
 
-.hero-right { position: relative; padding-top: 8px; }
+.hero-right { position: relative; }
 .hero-img-frame {
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
   border: 2px solid rgba(255,255,255,0.25);
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   background: #5A7A6A;
   position: relative;
 }
@@ -204,7 +201,9 @@ h1.hero-title {
   border-radius: 12px;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 24px;
+  overflow: visible;
 }
+.prob-icon svg { overflow: visible; }
 .prob-icon.rojo { background: #FDEAEA; }
 .prob-icon.beige { background: #F2EBE0; }
 .prob-icon.verde { background: #EAF0E4; }
@@ -242,7 +241,7 @@ h1.hero-title {
   background: #7A8060;
   padding: 80px 60px;
 }
-.sol-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.sol-inner { display: grid; grid-template-columns: 0.6fr 1fr; gap: 64px; align-items: center; }
 .sol-tag {
   display: inline-block;
   background: rgba(255,255,255,0.15);
@@ -432,7 +431,7 @@ h1.hero-title {
 .app-feat-desc { font-size: 15px; color: rgba(255,255,255,0.72); line-height: 1.6; font-weight: 300; }
 
 .app-quote {
-  background: rgba(255,255,255,0.1);
+  background: crimson;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 12px;
   padding: 20px 24px;
@@ -561,8 +560,9 @@ h1.hero-title {
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
 }
-.btn-rojo:hover { background: var(--rojo-oscuro); }
+.btn-rojo:hover { background: var(--rojo-oscuro); transform: scale(1.06); }
 .btn-outline {
   display: inline-flex;
   align-items: center;
@@ -577,8 +577,9 @@ h1.hero-title {
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
 }
-.btn-outline:hover { border-color: rgba(255,255,255,0.5); }
+.btn-outline:hover { border-color: rgba(255,255,255,0.5); transform: scale(1.06); }
 
 .cta-trust {
   display: flex;
